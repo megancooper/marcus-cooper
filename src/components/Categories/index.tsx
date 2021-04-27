@@ -16,7 +16,7 @@ const Categories: React.FC<Props> = ({categories}: Props) => {
           <button
             type="button"
             key={index}
-            className="bg-white hover:bg-gray-100 rounded mr-2 mt-2 px-2 py-0 shadow-sm focus:outline-none"
+            className="bg-white hover:bg-gray-100 text-lg rounded mr-2 mt-2 px-2 py-0 shadow-sm focus:outline-none"
             onClick={() => setSelectedCategory(filter)}
           >
             {filter}
