@@ -17,11 +17,16 @@ const Hamburger = () => {
 
   return (
     <>
-      <div className="block lg:hidden">
+      <div className="flex justify-between items-center pb-2 lg:hidden">
+        <div className="ml-3">
+          <strong className="text-xl">Marcus Cooper</strong>
+          <p className="text-gray-500">Austin, TX</p>
+        </div>
+
         <button
           ref={hamburgerMenu}
           type="button"
-          className="flex items-center px-3 py-2 appearance-none focus:outline-none bg-white hover:bg-white ml-auto"
+          className="flex items-center px-3 py-2 appearance-none focus:outline-none bg-white hover:bg-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <List size={30} />
@@ -39,7 +44,7 @@ const Hamburger = () => {
           size={35}
           onClick={handleClose}
         />
-        <ul className="inline-flex flex-col absolute top-0 left-0 z-10 w-screen bg-theme shadow">
+        <ul className="inline-flex flex-col absolute top-0 left-0 z-10 w-screen bg-white shadow">
           {MenuItems.map((item, index) => (
             <li className="p-3" key={index}>
               {item.link.includes('http') ? (

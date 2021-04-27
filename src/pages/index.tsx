@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Overlay from '../components/overlay';
-import Header from '../components/header';
+import Overlay from '../components/Overlay';
+import Header from '../components/Header';
+import ScrollBar from '../components/CustomScroll';
 import Categories from '../components/Categories';
 import DisplayedContent from '../components/DisplayedContent';
 import {CATEGORIES} from '../constants';
@@ -16,9 +17,13 @@ const Index = ({categories}: Props) => (
     </Head>
     <Overlay />
     <Header />
-    <div className="px-20 w-full flex bg-content h-screen">
+
+    <div className="px-2 pt-2 w-full flex flex-col lg:flex-row bg-content h-screen lg:px-20 2xl:px-40">
       <Categories categories={categories} />
-      <DisplayedContent />
+      <ScrollBar>
+        <DisplayedContent />
+      </ScrollBar>
+
     </div>
   </>
 );

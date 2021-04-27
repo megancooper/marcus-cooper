@@ -6,8 +6,8 @@ const DisplayedContent = () => {
   const {filteredContent} = useContext(AppContext);
 
   return (
-    <ul className="flex-1">
-      {filteredContent.map((content, index) => <Card key={index} />)}
+    <ul className="flex-1 overflow-y-auto">
+      {filteredContent.map((content, index) => <Card key={index} content={content} />)}
     </ul>
   );
 };
