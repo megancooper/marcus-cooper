@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Overlay from '../components/overlay';
+import Header from '../components/header';
 
 type Props = {
   allPosts: string[]
@@ -7,9 +9,11 @@ type Props = {
 const Index = ({allPosts}: Props) => (
   <>
     <Head>
-      <title>Build Me</title>
+      <title>Marcus Cooper</title>
     </Head>
-    Templates are fun!
+    <Overlay />
+    <Header />
+    <div className="container mx-auto">Content</div>
   </>
 );
 
