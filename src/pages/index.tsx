@@ -1,26 +1,34 @@
 import Head from 'next/head';
 import Overlay from '../components/overlay';
 import Header from '../components/header';
+import Categories from '../components/Categories';
+import DisplayedContent from '../components/DisplayedContent';
+import {CATEGORIES} from '../constants';
 
-type Props = {
-  allPosts: string[]
-};
+interface Props {
+  categories: string[]
+}
 
-const Index = ({allPosts}: Props) => (
+const Index = ({categories}: Props) => (
   <>
     <Head>
       <title>Marcus Cooper</title>
     </Head>
     <Overlay />
     <Header />
-    <div className="container mx-auto">Content</div>
+    <div className="px-20 w-full flex bg-content h-screen">
+      <Categories categories={categories} />
+      <DisplayedContent />
+    </div>
   </>
 );
 
 export default Index;
 
-export const getStaticProps = async () => ({
-  props: {
-    allPosts: [],
-  },
-});
+export async function getStaticProps() {
+  return {
+    props: {
+      categories: CATEGORIES,
+    },
+  };
+}

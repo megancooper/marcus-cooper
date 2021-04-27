@@ -5,7 +5,7 @@ import Hamburger from './hamburger';
 const Header = () => (
   <nav>
     <div
-      className="mx-auto px-16 py-2 hidden lg:inline-flex items-center w-full h-20 justify-between 2xl:justify-center"
+      className="mx-auto px-20 py-2 hidden lg:inline-flex items-center w-full h-20 justify-between 2xl:justify-center"
     >
       <img
         alt="Marcus Cooper profile"
@@ -14,16 +14,16 @@ const Header = () => (
         style={{borderRadius: '50%', bottom: 30}}
       />
       <ul className="flex justify-center">
-        {MenuItems.map(item => (
+        {MenuItems.map((item, index) => (
           <>
             {item.link.includes('http') ? (
-              <a className="pr-10 inline-flex items-center" href={item.link} target="_blank" rel="noreferrer">
+              <a key={index} className="pr-10 inline-flex items-center" href={item.link} target="_blank" rel="noreferrer">
                 {item.icon}
                 {item.name}
               </a>
             )
               : (
-                <Link href={item.link}>
+                <Link key={index} href={item.link}>
                   <a className="pr-10 inline-flex items-center">
                     {item.icon}
                     {item.name}

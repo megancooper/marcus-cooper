@@ -13,3 +13,7 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+.bg-content {
+  background-color: #F1F7FF;
+}

@@ -40,8 +40,8 @@ const Hamburger = () => {
           onClick={handleClose}
         />
         <ul className="inline-flex flex-col absolute top-0 left-0 z-10 w-screen bg-theme shadow">
-          {MenuItems.map(item => (
-            <li className="p-3">
+          {MenuItems.map((item, index) => (
+            <li className="p-3" key={index}>
               {item.link.includes('http') ? (
                 <a className="px-10 hover:text-gray-800" href={item.link} target="_blank" rel="noreferrer">
                   {item.name}
