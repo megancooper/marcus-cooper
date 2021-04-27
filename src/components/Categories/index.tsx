@@ -9,7 +9,7 @@ const Categories: React.FC<Props> = ({categories}: Props) => {
   const {setSelectedCategory} = useContext(AppContext);
 
   return (
-    <div className="w-full lg:max-w-xs mb-2 lg:mb-0">
+    <div className="w-full lg:max-w-xs mb-2 lg:mb-0 mt-4">
       <strong className="text-xl">Categories</strong>
       <div className="mt-4">
         {categories.map((filter, index) => (

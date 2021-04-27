@@ -1,4 +1,6 @@
-import {Twitter, Facebook, Broadcast} from 'react-bootstrap-icons';
+import {
+  Twitter, Facebook, Broadcast, Linkedin,
+} from 'react-bootstrap-icons';
 
 export default [
   {
@@ -10,6 +12,11 @@ export default [
     name: 'Resume',
     link: '/about',
     icon: null,
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/marcus-cooper-a1321113/',
+    icon: <Linkedin className="inline-block mr-2" color="#2867B2" size={20} />,
   },
   {
     name: 'Twitter',
