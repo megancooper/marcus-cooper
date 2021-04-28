@@ -6,8 +6,8 @@ interface Props {
 
 const Card = ({content, ...rest}: Props) => {
   const {
-    highlight, category, publicationDate, preview,
-    link, publicationLogo,
+    highlight, categories, publicationDate, preview,
+    link, publicationLogo, title, source,
   } = content;
 
   return (
@@ -19,19 +19,21 @@ const Card = ({content, ...rest}: Props) => {
       {...rest}
     >
       <div className="flex justify-between items-center mb-2">
-        <p className="text-gray-500">{category}</p>
+        <p className="font-bold underline">
+          {source}
+        </p>
         <p className="mr-4 text-gray-500">{publicationDate}</p>
       </div>
 
       <div className="mr-20">
-        <strong className="text-2xl font-serif max-h-24	inline-block overflow-hidden overflow-ellipsis">
-          "
+        <strong className="text-xl font-serif max-h-28 inline-block overflow-hidden overflow-ellipsis">
           {highlight}
-          "
         </strong>
+        {preview && (
         <div className="mt-1 overflow-ellipsis overflow-hidden whitespace-nowrap">
           {preview}
         </div>
+        )}
       </div>
 
       {publicationLogo

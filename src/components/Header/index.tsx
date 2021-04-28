@@ -14,9 +14,13 @@ const Header = () => (
           className="block h-40 w-40 mr-4 relative"
           style={{borderRadius: '50%', bottom: 30}}
         />
-        <div className="mr-20">
+        <div className="mr-20 mt-5">
           <strong className="text-xl">Marcus Cooper</strong>
-          <p className="text-gray-500">Austin, TX</p>
+          <p className="text-gray-500">
+            Senior-Level Communications Executive
+            <br />
+            Austin, TX
+          </p>
         </div>
       </div>
       <ul className="flex justify-center">

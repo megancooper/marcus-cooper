@@ -20,7 +20,7 @@ const Hamburger = () => {
       <div className="flex justify-between items-center pb-2 lg:hidden">
         <div className="ml-3">
           <strong className="text-xl">Marcus Cooper</strong>
-          <p className="text-gray-500">Austin, TX</p>
+          <p className="text-gray-500">Senior-Level Communications Executive</p>
         </div>
 
         <button

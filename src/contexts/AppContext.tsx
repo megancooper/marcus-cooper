@@ -1,7 +1,7 @@
 import React, {createContext, useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {AppContextType} from '../types/app';
-import {DIGITAL_CONTENT as DefaultCategory} from '../constants';
+import {TECHNOLOGY as DefaultCategory} from '../constants';
 import AllContent from '../content';
 import {Article} from '../types/article';
 
@@ -20,12 +20,12 @@ interface ContextProps {
 export const AppContextProvider = ({children}: ContextProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string>(DefaultCategory);
   const [filteredContent, setFilteredContent] = useState<Article[]>(
-    AllContent.filter(c => c.category === DefaultCategory),
+    AllContent.filter(c => c.categories.includes(DefaultCategory)),
   );
 
   useEffect(() => {
     setFilteredContent([
-      ...AllContent.filter(c => c.category === selectedCategory),
+      ...AllContent.filter(c => c.categories.includes(selectedCategory)),
     ]);
   }, [selectedCategory]);
 

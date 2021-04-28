@@ -4,13 +4,18 @@ import {
 
 export default [
   {
+    name: 'Home',
+    link: '/',
+    icon: null,
+  },
+  {
     name: 'About',
     link: '/about',
     icon: null,
   },
   {
     name: 'Resume',
-    link: '/about',
+    link: 'https://drive.google.com/file/d/1iSFX1VoxbplzefxjF6ivF1NqsT_ZhBeK/view?usp=sharing',
     icon: null,
   },
   {
@@ -24,7 +29,7 @@ export default [
     icon: <Twitter className="inline-block mr-2" color="#00acee" size={20} />,
   },
   {
-    name: 'Anchor FM',
+    name: 'Anchor',
     link: 'https://anchor.fm/marcus-cooper1',
     icon: <Broadcast className="inline-block mr-2" color="#8940FA" size={20} />,
   },
