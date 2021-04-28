@@ -19,6 +19,7 @@ const CustomScroll: React.FC<Props> = ({...props}) => {
       autoHide
       renderThumbHorizontal={renderThumb}
       renderThumbVertical={renderThumb}
+      universal
       {...props}
     />
   );

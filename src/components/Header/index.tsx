@@ -14,7 +14,7 @@ const Header = () => (
           className="block h-40 w-40 mr-4 relative"
           style={{borderRadius: '50%', bottom: 30}}
         />
-        <div className="mr-20 mt-5">
+        <div className="mr-20 pt-10">
           <strong className="text-xl">Marcus Cooper</strong>
           <p className="text-gray-500">
             Senior-Level Communications Executive
