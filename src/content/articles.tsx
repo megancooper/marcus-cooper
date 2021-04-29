@@ -1,5 +1,5 @@
 import {
-  BOARD_REPORT,
+  REPORTS,
   BROCHURES,
   DIGITAL_CONTENT,
   HEALTH, NEWSLETTERS, NEWS_RELEASE, PODCASTS, PRESENTATIONS, SPOKESMAN, TECHNOLOGY,
@@ -7,7 +7,27 @@ import {
 
 export default [
   {
-    title: 'Texas\' Medicaid waiver is a &#39;canary in the coal mine&#39; for abortion carve-outs',
+    title: 'VMware Win Story: Eskom Data Center Solutions',
+    source: 'VMware Win Story: Eskom Data Center Solutions',
+    link: 'https://drive.google.com/file/d/1_cKjEtAipyGcO5wxdFOfWurqLHDUOhVx/view?usp=sharing',
+    highlight: 'To help Eskom gather the necessary data about the human capital investments that would be most conducive to high performance, executives teamed with Accenture to implement the Accenture Human Capital Development Framework.',
+    preview: 'Eskom, the South African Government\'s electrical utility, is in the process of evolving from an environment characterized by central government planning to one marked by more competition and expansion.',
+    publicationDate: '',
+    publicationLogo: null,
+    categories: [TECHNOLOGY, REPORTS],
+  },
+  {
+    title: 'VMware Win Story: Medco Health Solutions',
+    source: 'VMware Win Story: Medco Health Solutions',
+    link: 'https://drive.google.com/file/d/1llKTK5OWkyZiFu1KFkTGiDpl8G8Z2e4D/view?usp=sharing',
+    highlight: '[An] innovative VMware product and Alliance Partner EMC’s solid track record allowed a potential customer, Medco, to identify a strong working relationship that could help them meet their business challenges.',
+    preview: 'As one of the nation\'s leading healthcare companies, Medco Health Solutions is facing the challenge of maintaining business agility in a volatile environment with the help of VMware and Alliance Partner EMC, a global leader in IT transformation. The VMware – EMC partnership resulted in the sale of VFabric Gemfire Professional services to Medco.',
+    publicationDate: '',
+    publicationLogo: null,
+    categories: [TECHNOLOGY, REPORTS],
+  },
+  {
+    title: 'Texas\' Medicaid waiver is a \'canary in the coal mine\' for abortion carve-outs',
     source: 'Modern Healthcare',
     link: 'https://www.modernhealthcare.com/article/20170516/NEWS/170519885/texas-medicaid-waiver-is-a-canary-in-the-coal-mine-for-abortion-carve-outs',
     highlight: '"Receipt of the federal funds, in a tough budget year, will help offset the need for devastating cuts to Medicaid eligibility for a pregnant women and/or Medicaid payments to physicians," said Marcus Cooper a spokesman for the Texas Medical Association.',
@@ -194,7 +214,7 @@ export default [
     preview: '',
     publicationDate: 'Jan 2015',
     publicationLogo: null,
-    categories: [DIGITAL_CONTENT, BOARD_REPORT, HEALTH],
+    categories: [DIGITAL_CONTENT, REPORTS, HEALTH],
   },
   {
     title: 'Yes, I’m Ready to Quit',

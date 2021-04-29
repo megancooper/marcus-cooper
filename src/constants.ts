@@ -8,7 +8,7 @@ export const PRESENTATIONS = 'Presentations';
 export const NEWSLETTERS = 'Newsletters';
 export const BROCHURES = 'Brochures';
 export const VIDEO = 'Video';
-export const BOARD_REPORT = 'Board Reports';
+export const REPORTS = 'Reports';
 
 export const CATEGORIES = [
   HEALTH,
@@ -21,5 +21,5 @@ export const CATEGORIES = [
   NEWSLETTERS,
   BROCHURES,
   VIDEO,
-  BOARD_REPORT,
+  REPORTS,
 ];
