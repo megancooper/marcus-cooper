@@ -7,4 +7,6 @@ export interface Article {
   publicationDate: string
   publicationLogo: string|null
   categories: string[]
+  videoId?: string
+  videoPath?: string
 }

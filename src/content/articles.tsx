@@ -2,10 +2,77 @@ import {
   REPORTS,
   BROCHURES,
   DIGITAL_CONTENT,
-  HEALTH, NEWSLETTERS, NEWS_RELEASE, PODCASTS, PRESENTATIONS, SPOKESMAN, TECHNOLOGY,
+  HEALTH, NEWSLETTERS,
+  NEWS_RELEASE, PODCASTS,
+  PRESENTATIONS, SPOKESMAN,
+  TECHNOLOGY, VIDEO,
 } from '../constants';
 
 export default [
+  {
+    title: 'Vaccines Defend What Matters Promo',
+    source: 'Vaccines Defend What Matters Promo',
+    link: 'https://drive.google.com/file/d/1bwBl9lGALvRedbMGOrBVgjRAiDMa0Zl_/view?usp=sharing',
+    categories: [VIDEO],
+    videoId: '1bwBl9lGALvRedbMGOrBVgjRAiDMa0Zl_',
+  },
+  {
+    title: 'Texas Medical Association: Our Mission Our Masks 2020-2021',
+    source: 'Texas Medical Association: Our Mission Our Masks 2020-2021',
+    link: 'https://drive.google.com/file/d/1eqbTLgITf3CeYUKBT1eC7IlSefjkt5c5/view?usp=sharing',
+    categories: [VIDEO],
+    videoId: '1eqbTLgITf3CeYUKBT1eC7IlSefjkt5c5',
+  },
+  {
+    title: 'Texas Medical Association: Physicians Benevolence Fund',
+    source: 'Texas Medical Association: Physicians Benevolence Fund',
+    link: 'https://drive.google.com/file/d/1TKpmNGwk1SSR1ZIH8-fEIH4gzGLJaTjF/view?usp=sharingg',
+    categories: [VIDEO],
+    videoId: '1TKpmNGwk1SSR1ZIH8-fEIH4gzGLJaTjF',
+  },
+  {
+    title: 'Texas Medical Association Hotline Weekly Videocast',
+    source: 'Texas Medical Association Hotline Weekly Videocast',
+    link: 'https://drive.google.com/file/d/19eavF4BWgESwbfW7nllfIeFxohzU1Tfm/view?usp=sharing',
+    categories: [VIDEO],
+    videoPath: '/assets/Texas Medical Association Hotline Weekly Videocast.mp4',
+  },
+  {
+    title: 'Texas Medical Association Hotline: The Consequences of The Uninsured.',
+    source: 'Texas Medical Association Hotline: The Consequences of The Uninsured.',
+    link: 'https://youtu.be/baiDec-NB9A',
+    categories: [VIDEO],
+    videoPath: '/assets/TMA Hotline - The Consequences of The Uninsured..mp4',
+  },
+  {
+    title: 'Texas Medical Association Media Training Session',
+    source: 'Texas Medical Association Media Training Session',
+    link: 'https://youtu.be/SrUlrzskFNg',
+    categories: [VIDEO],
+    videoPath: '/assets/Media Traing Session w TMA Multimedia Manager Marcus Cooper.mp4',
+  },
+  {
+    title: 'TexMed Welcome Video 2021',
+    source: 'TexMed Welcome Video 2021',
+    link: 'https://drive.google.com/file/d/1AGfX3pg-_xKiXaB_7S7WDXu2nSOV3-Wa/view?usp=sharing',
+    categories: [VIDEO],
+    videoPath: '/assets/TexMed Welcome Video 2021.mp4',
+  },
+  {
+    title: 'Williamson County and Cities Health District 25th Anniversary Promo',
+    source: 'Williamson County and Cities Health District 25th Anniversary Promo',
+    link: 'https://youtu.be/iY-YzSWF6_A',
+    categories: [VIDEO],
+    videoPath: '/assets/WCCHD 25th Anniversary Video.mp4',
+  },
+  {
+    title: 'Wilco Wellness Alliance 5th Anniversary',
+    source: 'Wilco Wellness Alliance 5th Anniversary',
+    link: 'https://youtu.be/mxuDGtiu8iY',
+    categories: [VIDEO],
+    videoPath: '/assets/Wilco Wellness Alliance 5th Anniversary.mp4',
+  },
+
   {
     title: 'VMware Win Story: Eskom Data Center Solutions',
     source: 'VMware Win Story: Eskom Data Center Solutions',

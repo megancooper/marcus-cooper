@@ -1,1 +1,4 @@
-# NextJS + Typescript + TailwindCSS Template
+# Marcus Cooper
+
+Code for Marcus Cooper's website
+

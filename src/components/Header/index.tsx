@@ -16,32 +16,28 @@ const Header = () => (
         />
         <div className="mr-20 pt-10">
           <strong className="text-xl">Marcus Cooper</strong>
-          <p className="text-gray-500">
+          <p className="text-gray-500 overflow-ellipsis whitespace-nowrap w-10">
             Senior-Level Communications Executive
             <br />
             Austin, TX
           </p>
         </div>
       </div>
-      <ul className="flex justify-center">
-        {MenuItems.map((item, index) => (
-          <>
-            {item.link.includes('http') ? (
-              <a key={index} className="pr-10 inline-flex items-center" href={item.link} target="_blank" rel="noreferrer">
+      <ul className="flex justify-center lg:flex-wrap">
+        {MenuItems.map((item, index) => (item.link.includes('http') ? (
+          <a key={index} className="pr-10 inline-flex items-center" href={item.link} target="_blank" rel="noreferrer">
+            {item.icon}
+            {item.name}
+          </a>
+        )
+          : (
+            <Link key={index} href={item.link}>
+              <a className="pr-10 inline-flex items-center">
                 {item.icon}
                 {item.name}
               </a>
-            )
-              : (
-                <Link key={index} href={item.link}>
-                  <a className="pr-10 inline-flex items-center">
-                    {item.icon}
-                    {item.name}
-                  </a>
-                </Link>
-              )}
-          </>
-        ))}
+            </Link>
+          )))}
       </ul>
     </div>
     <Hamburger />
