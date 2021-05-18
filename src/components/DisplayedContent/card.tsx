@@ -18,7 +18,7 @@ const Card = ({content, ...rest}: Props) => {
   return (
     <a
       className="w-full h-52 mt-4 inline-block p-4 rounded shadow-sm bg-white hover:bg-gray-100 cursor-pointer no-underline text-black"
-      style={{height: isVideo ? 'auto' : null}}
+      style={{height: isVideo ? 'auto' : ''}}
       href={link}
       target="_blank"
       rel="noreferrer"
