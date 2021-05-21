@@ -1,14 +1,14 @@
-export const HEALTH = 'Health';
-export const SPOKESMAN = 'Spokesman';
-export const TECHNOLOGY = 'Technology';
-export const NEWS_RELEASE = 'News Releases';
-export const DIGITAL_CONTENT = 'Digital Content';
-export const PODCASTS = 'Podcasts';
-export const PRESENTATIONS = 'Presentations';
-export const NEWSLETTERS = 'Newsletters';
-export const BROCHURES = 'Brochures';
-export const VIDEO = 'Video';
-export const REPORTS = 'Reports';
+export const HEALTH = 'health';
+export const SPOKESMAN = 'spokesman';
+export const TECHNOLOGY = 'technology';
+export const NEWS_RELEASE = 'news-releases';
+export const DIGITAL_CONTENT = 'digital-content';
+export const PODCASTS = 'podcasts';
+export const PRESENTATIONS = 'presentations';
+export const NEWSLETTERS = 'newsletters';
+export const BROCHURES = 'brochures';
+export const VIDEO = 'video';
+export const REPORTS = 'reports';
 
 export const CATEGORIES = [
   HEALTH,

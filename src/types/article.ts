@@ -9,4 +9,5 @@ export interface Article {
   categories: string[]
   videoId?: string
   videoPath?: string
+  imagePath?: string
 }

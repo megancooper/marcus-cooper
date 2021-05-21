@@ -8,9 +8,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.169",
     "classnames": "^2.3.1",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
+    "lodash": "^4.17.21",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",

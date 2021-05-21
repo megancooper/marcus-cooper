@@ -10,14 +10,14 @@ const Card = ({content, ...rest}: Props) => {
   const {
     highlight, categories, publicationDate,
     preview, link, publicationLogo, source,
-    videoId, videoPath,
+    videoId, videoPath, imagePath, title,
   } = content;
 
   const isVideo = categories.includes(VIDEO);
 
   return (
     <a
-      className="w-full h-52 mt-4 inline-block p-4 rounded shadow-sm bg-white hover:bg-gray-100 cursor-pointer no-underline text-black"
+      className="w-full mt-4 inline-block p-4 rounded shadow-sm bg-white hover:bg-gray-100 cursor-pointer no-underline text-black"
       style={{height: isVideo ? 'auto' : ''}}
       href={link}
       target="_blank"
@@ -39,6 +39,10 @@ const Card = ({content, ...rest}: Props) => {
 
       {videoPath && (
         <video controls src={videoPath} className="w-full h-auto" />
+      )}
+
+      {imagePath && (
+        <img alt={title} src={imagePath} className="w-full h-auto" />
       )}
 
       <div className="mr-20">
