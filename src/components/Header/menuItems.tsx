@@ -5,7 +5,7 @@ import {
 export default [
   {
     name: 'Home',
-    link: '/',
+    link: '/#technology',
     icon: null,
   },
   {
