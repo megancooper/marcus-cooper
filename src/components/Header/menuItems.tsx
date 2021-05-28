@@ -15,7 +15,7 @@ export default [
   },
   {
     name: 'Resume',
-    link: 'https://drive.google.com/file/d/1iSFX1VoxbplzefxjF6ivF1NqsT_ZhBeK/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/11o-UVGQugUkgUFnryzLt3bU3GRxq3sFw/view?usp=sharing',
     icon: null,
   },
   {
